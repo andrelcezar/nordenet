@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nordenet - Internet e Segurança</title>
+  <meta name="description" content="Internet rápida, estável e segura com a Nordenet. Planos residenciais e empresariais com monitoramento de câmeras de segurança.">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="icon" href="nordenet01.png" type="image/png">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="#" class="logo-link">
+        <img src="./assets/nordenet01.png" alt="Logo da Nordenet" class="logo">
+      </a>
+      <nav class="navbar" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#seguranca">Segurança</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Conectando você ao futuro!</h1>
+        <p>Internet de alta velocidade, estabilidade e agora também segurança para sua casa ou empresa.</p>
+        <a href="#planos" class="btn btn-primary">Conheça nossos planos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section sobre">
+    <div class="container">
+      <h2>Sobre a Nordenet</h2>
+      <p>
+        A <strong>Nordenet</strong> é uma provedora de internet que oferece soluções completas em conectividade e segurança.
+        Com tecnologia de ponta e suporte especializado, garantimos uma experiência de navegação estável e confiável.
+      </p>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section id="planos" class="section planos">
+    <div class="container">
+      <h2>Nossos Planos de Internet</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Plano Básico</h3>
+          <p class="speed">100 Mbps</p>
+          <p class="price">R$ 79,90/mês</p>
+          <button class="btn btn-secondary">Assine Agora</button>
+        </article>
+
+        <article class="card destaque">
+          <h3>Plano Intermediário</h3>
+          <p class="speed">300 Mbps</p>
+          <p class="price">R$ 99,90/mês</p>
+          <button class="btn btn-secondary">Assine Agora</button>
+        </article>
+
+        <article class="card">
+          <h3>Plano Premium</h3>
+          <p class="speed">600 Mbps</p>
+          <p class="price">R$ 129,90/mês</p>
+          <button class="btn btn-secondary">Assine Agora</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEGURANÇA -->
+  <section id="seguranca" class="section seguranca">
+    <div class="container seguranca-content">
+      <div class="seguranca-text">
+        <h2>Nordenet agora também é segurança!</h2>
+        <p>
+          Além de internet de qualidade, oferecemos <strong>instalação e monitoramento de câmeras de segurança</strong> 
+          para sua casa ou empresa.
+        </p>
+        <ul class="checklist">
+          <li>✅ Acesso remoto via celular</li>
+          <li>✅ Gravação 24h</li>
+          <li>✅ Equipamentos modernos</li>
+          <li>✅ Suporte técnico especializado</li>
+        </ul>
+        <p class="cta"><strong>Proteja o que realmente importa!</strong></p>
+      </div>
+      <div class="seguranca-img">
+        <img src="./assets/camera2.jpg" alt="Serviço de segurança Nordenet">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+<section id="contato" class="section contato" style="padding: 50px 0; background: #f5f5f5;">
+  <div class="container" style="max-width: 600px; margin: auto;">
+    <h2 style="text-align: center; margin-bottom: 20px;">Fale Conosco</h2>
+    <address style="text-align: center; margin-bottom: 30px; font-style: normal;">
+      Rua José Figueira de Menezes, 34 – Bela Vista, Belo Jardim - PE <br>
+      📞 (81) 99325-2979 | (81) 97341-1562 | (81) 9447-6512
+    </address>
+
+    <form id="contatoForm" action="https://formsubmit.co/aluiz.cez@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+      <!-- Campos ocultos para Formsubmit -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://seusite.github.io/obrigado.html">
+
+      <input type="text" name="nome" placeholder="Seu nome" required style="padding: 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 16px;">
+      <input type="email" name="email" placeholder="Seu e-mail" required style="padding: 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 16px;">
+      <textarea name="mensagem" placeholder="Sua mensagem" required rows="5" style="padding: 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 16px;"></textarea>
+      <button type="submit" class="btn btn-primary" style="padding: 12px; font-size: 16px; border: none; border-radius: 6px; background-color: #007bff; color: white; cursor: pointer;">Enviar</button>
+
+      <div id="feedback" style="margin-top: 10px; text-align: center; font-weight: bold; display: none;"></div>
+    </form>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById("contatoForm");
+  const feedback = document.getElementById("feedback");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // impede envio padrão
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        feedback.style.display = "block";
+        feedback.style.color = "green";
+        feedback.innerText = "Mensagem enviada com sucesso!";
+        form.reset();
+      } else {
+        feedback.style.display = "block";
+        feedback.style.color = "red";
+        feedback.innerText = "Erro ao enviar. Tente novamente.";
+      }
+    })
+    .catch(() => {
+      feedback.style.display = "block";
+      feedback.style.color = "red";
+      feedback.innerText = "Erro ao enviar. Tente novamente.";
+    });
+  });
+</script>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 <strong>Nordenet</strong> - Internet do seu jeito. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
