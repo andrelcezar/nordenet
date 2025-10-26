@@ -1,4 +1,4 @@
-// Rolagem suave ao clicar no menu
+// Rolagem suave
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -8,8 +8,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Alerta simples de envio do formulário
-document.querySelector('form')?.addEventListener('submit', e => {
-  e.preventDefault();
-  alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
+// Menu mobile
+const toggle = document.getElementById("menu-toggle");
+const nav = document.querySelector(".navbar");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
 });
