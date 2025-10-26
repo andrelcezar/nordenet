@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nordenet - Internet e Segurança</title>
   <meta name="description" content="Internet rápida, estável e segura com a Nordenet. Planos residenciais e empresariais com monitoramento de câmeras de segurança.">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <link rel="icon" href="nordenet01.png" type="image/png">
+  <link rel="icon" href="./assets/nordenet01.png" type="image/png" />
 </head>
 
 <body>
@@ -15,7 +15,7 @@
   <header class="header">
     <div class="container header-content">
       <a href="#" class="logo-link">
-        <img src="./assets/nordenet01.png" alt="Logo da Nordenet" class="logo">
+        <img src="./assets/nordenet01.png" alt="Logo da Nordenet" class="logo" />
       </a>
       <nav class="navbar" aria-label="Menu principal">
         <ul class="nav-list">
@@ -23,6 +23,7 @@
           <li><a href="#planos">Planos</a></li>
           <li><a href="#seguranca">Segurança</a></li>
           <li><a href="#contato">Contato</a></li>
+          <li><a href="#mapa">Localização</a></li>
         </ul>
       </nav>
     </div>
@@ -97,67 +98,57 @@
         <p class="cta"><strong>Proteja o que realmente importa!</strong></p>
       </div>
       <div class="seguranca-img">
-        <img src="./assets/camera2.jpg" alt="Serviço de segurança Nordenet">
+        <img src="./assets/camera2.jpg" alt="Serviço de segurança Nordenet" />
       </div>
     </div>
   </section>
 
   <!-- CONTATO -->
-<section id="contato" class="section contato" style="padding: 50px 0; background: #f5f5f5;">
-  <div class="container" style="max-width: 600px; margin: auto;">
-    <h2 style="text-align: center; margin-bottom: 20px;">Fale Conosco</h2>
-    <address style="text-align: center; margin-bottom: 30px; font-style: normal;">
-      Rua José Figueira de Menezes, 34 – Bela Vista, Belo Jardim - PE <br>
-      📞 (81) 99325-2979 | (81) 97341-1562 | (81) 9447-6512
-    </address>
+  <section id="contato" class="section contato">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <address>
+        Rua José Figueira de Menezes, 34 – Bela Vista, Belo Jardim - PE <br />
+        📞 (81) 99325-2979 | (81) 97341-1562 | (81) 9447-6512
+      </address>
 
-    <form id="contatoForm" action="https://formsubmit.co/aluiz.cez@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
-      <!-- Campos ocultos para Formsubmit -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://seusite.github.io/obrigado.html">
+      <form class="contato-form" action="https://formsubmit.co/aluiz.cez@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://seusite.github.io/obrigado.html" />
 
-      <input type="text" name="nome" placeholder="Seu nome" required style="padding: 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 16px;">
-      <input type="email" name="email" placeholder="Seu e-mail" required style="padding: 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 16px;">
-      <textarea name="mensagem" placeholder="Sua mensagem" required rows="5" style="padding: 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 16px;"></textarea>
-      <button type="submit" class="btn btn-primary" style="padding: 12px; font-size: 16px; border: none; border-radius: 6px; background-color: #007bff; color: white; cursor: pointer;">Enviar</button>
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea name="mensagem" placeholder="Sua mensagem" required rows="5"></textarea>
+        <button type="submit" class="btn btn-secondary">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
 
-      <div id="feedback" style="margin-top: 10px; text-align: center; font-weight: bold; display: none;"></div>
-    </form>
-  </div>
-</section>
+  <!-- MAPA -->
+  <section id="mapa" class="section mapa-section">
+    <div class="container">
+      <h2>Nossa Localização</h2>
+      <p>Visite-nos e conheça mais sobre nossos serviços de Internet e Segurança.</p>
+    </div>
 
-<script>
-  const form = document.getElementById("contatoForm");
-  const feedback = document.getElementById("feedback");
+    <div class="mapa-full">
+      <iframe 
+        class="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.2814866922177!2d-36.4248749!3d-8.340542399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aa2f45a8932c01%3A0x5bcb9ac5db9a7bdf!2sR.%20Jos%C3%A9%20Figueira%20de%20Menezes%2C%2034%20-%20Bela%20Vista%2C%20Belo%20Jardim%20-%20PE%2C%2055151-120!5e0!3m2!1spt-BR!2sbr!4v1730084465116!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
 
-  form.addEventListener("submit", function(e) {
-    e.preventDefault(); // impede envio padrão
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-      method: "POST",
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    })
-    .then(response => {
-      if (response.ok) {
-        feedback.style.display = "block";
-        feedback.style.color = "green";
-        feedback.innerText = "Mensagem enviada com sucesso!";
-        form.reset();
-      } else {
-        feedback.style.display = "block";
-        feedback.style.color = "red";
-        feedback.innerText = "Erro ao enviar. Tente novamente.";
-      }
-    })
-    .catch(() => {
-      feedback.style.display = "block";
-      feedback.style.color = "red";
-      feedback.innerText = "Erro ao enviar. Tente novamente.";
-    });
-  });
-</script>
+    <div class="container">
+      <a href="https://maps.google.com/?q=Rua+José+Figueira+de+Menezes,+34,+Belo+Jardim,+PE" 
+         target="_blank" 
+         class="btn btn-primary mapa-btn">
+        📍 Ver no Google Maps
+      </a>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">

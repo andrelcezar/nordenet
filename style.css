@@ -1,19 +1,16 @@
 /* ================================
-   ESTILO PRINCIPAL - NORDENET
+   NORDENET - ESTILOS GERAIS
    ================================ */
 
 :root {
   --azul-nordenet: #004aad;
-  --azul-escuro: #00337a;
+  --azul-escuro: #002f73;
   --branco: #ffffff;
   --cinza-claro: #f5f5f5;
-  --cinza-texto: #eaeaea;
   --preto: #0a0a0a;
   --sombra: rgba(0, 0, 0, 0.1);
-  --transicao: 0.3s ease;
   --raio: 12px;
-  --max-width: 1200px;
-  --padding-section: 80px 20px;
+  --transicao: 0.3s ease;
   --fonte: "Poppins", sans-serif;
 }
 
@@ -23,71 +20,51 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: var(--fonte);
-  background-color: var(--branco);
+  background: var(--branco);
   color: var(--preto);
   line-height: 1.6;
 }
 
-/* ================================
-   CONTAINERS E ESTRUTURA
-   ================================ */
-
 .container {
-  width: 100%;
-  max-width: var(--max-width);
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-.section {
-  padding: var(--padding-section);
-  text-align: center;
 }
 
 h1, h2, h3 {
   color: var(--azul-nordenet);
-  margin-bottom: 16px;
   font-weight: 700;
 }
 
-p {
-  margin-bottom: 16px;
-  color: #333;
- 
-}
-
 /* ================================
-   HEADER E NAVEGAÇÃO
+   HEADER
    ================================ */
 
 .header {
-  background-color: var(--azul-nordenet);
-  box-shadow: 0 4px 6px var(--sombra);
+  background: var(--azul-nordenet);
+  color: var(--branco);
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 4px 6px var(--sombra);
 }
 
 .header-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 16px 0;
 }
 
 .logo {
-  height: 60px;
+  height: 45px;
 }
 
 .nav-list {
-  list-style: none;
   display: flex;
+  list-style: none;
   gap: 24px;
 }
 
@@ -107,22 +84,20 @@ p {
    ================================ */
 
 .hero {
-  /*background: linear-gradient(to right, var(--azul-nordenet), var(--azul-escuro));*/
-  background-color: var(--cinza-claro);
-  color: var(--branco);
-  padding: 120px 20px;
+  background: var(--cinza-claro);
   text-align: center;
+  padding: 140px 20px;
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2.6rem;
+  margin-bottom: 10px;
 }
 
 .hero-text p {
   font-size: 1.1rem;
   margin-bottom: 30px;
-  color: var(--preto);
+  color: #333;
 }
 
 /* ================================
@@ -131,7 +106,7 @@ p {
 
 .btn {
   display: inline-block;
-  padding: 12px 30px;
+  padding: 12px 28px;
   border-radius: var(--raio);
   font-weight: 600;
   cursor: pointer;
@@ -140,39 +115,35 @@ p {
 }
 
 .btn-primary {
-  background-color: var(--branco);
-  color: var(--azul-nordenet);
+  background: var(--azul-nordenet);
+  color: var(--branco);
 }
 
 .btn-primary:hover {
-  background-color: #cce3ff;
+  background: var(--azul-escuro);
 }
 
 .btn-secondary {
-  background-color: var(--azul-nordenet);
+  background: var(--azul-escuro);
   color: var(--branco);
   border: none;
 }
 
 .btn-secondary:hover {
-  background-color: var(--azul-escuro);
+  background: var(--azul-nordenet);
 }
 
 /* ================================
-   SOBRE
+   SEÇÕES
    ================================ */
 
-.sobre p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.1rem;
+.section {
+  padding: 80px 20px;
+  text-align: center;
 }
 
-/* ================================
-   PLANOS
-   ================================ */
-
-.planos .cards {
+/* PLANOS */
+.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
@@ -180,46 +151,25 @@ p {
 }
 
 .card {
-  background-color: var(--branco);
+  background: var(--branco);
+  padding: 30px 20px;
   border-radius: var(--raio);
   box-shadow: 0 4px 10px var(--sombra);
-  padding: 30px 20px;
   transition: var(--transicao);
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 14px var(--sombra);
-}
-
-.card h3 {
-  margin-bottom: 10px;
-  color: var(--azul-escuro);
-}
-
-.card .speed {
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-.card .price {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: var(--azul-nordenet);
-  margin-bottom: 20px;
+  transform: translateY(-5px);
 }
 
 .card.destaque {
   border: 2px solid var(--azul-nordenet);
-  background-color: #f0f6ff;
+  background: #f0f6ff;
 }
 
-/* ================================
-   SEGURANÇA
-   ================================ */
-
+/* SEGURANÇA */
 .seguranca {
-  background-color: var(--cinza-claro);
+  background: var(--cinza-claro);
 }
 
 .seguranca-content {
@@ -228,16 +178,11 @@ p {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  text-align: left;
 }
 
 .seguranca-text {
   flex: 1 1 400px;
-}
-
-.seguranca-img {
-  flex: 1 1 400px;
-  text-align: center;
+  text-align: left;
 }
 
 .seguranca-img img {
@@ -247,27 +192,9 @@ p {
   box-shadow: 0 6px 12px var(--sombra);
 }
 
-.checklist {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-  font-size: 1rem;
-}
-
-.cta {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-/* ================================
-   CONTATO
-   ================================ */
-
-.contato address {
-  font-style: normal;
-  margin-bottom: 20px;
-  line-height: 1.5;
+/* CONTATO */
+.contato {
+  background: #f5f5f5;
 }
 
 .contato-form {
@@ -275,7 +202,7 @@ p {
   flex-direction: column;
   gap: 15px;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .contato-form input,
@@ -294,47 +221,49 @@ p {
   box-shadow: 0 0 0 2px rgba(0, 74, 173, 0.2);
 }
 
-/* ================================
-   FOOTER
-   ================================ */
+/* MAPA */
+.mapa-section {
+  background: var(--cinza-claro);
+  padding: 80px 0 0;
+}
 
+.mapa-full {
+  width: 100%;
+  height: 550px;
+  margin: 0;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.mapa {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.mapa-btn {
+  margin: 40px auto 60px;
+}
+
+/* FOOTER */
 .footer {
-  background-color: var(--azul-escuro);
+  background: var(--azul-escuro);
   color: var(--branco);
   text-align: center;
   padding: 20px;
-  font-size: 0.9rem;
 }
 
-footer, footer p {
-  color: #ffffff; /* Branco */
-}
-
-/* ================================
-   RESPONSIVIDADE
-   ================================ */
-
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
-  .header-content {
+  .seguranca-content {
     flex-direction: column;
-  }
-
-  .nav-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
+    text-align: center;
   }
 
   .hero-text h1 {
     font-size: 2rem;
   }
 
-  .seguranca-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .seguranca-text, .seguranca-img {
-    flex: 1 1 100%;
+  .mapa-full {
+    height: 400px;
   }
 }
