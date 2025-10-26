@@ -178,6 +178,48 @@ body {
 
 .card.destaque { border: 2px solid var(--azul-nordenet); background: #f0f6ff; }
 
+
+/* Seção Sobre */
+.section.sobre {
+  background-color: #f8f9fa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section.sobre h2 {
+  color: #003366; /* azul escuro da identidade visual */
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.section.sobre .subtitulo {
+  color: #007bff; /* azul vibrante */
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.section.sobre p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .section.sobre {
+    padding: 60px 15px;
+  }
+  .section.sobre h2 {
+    font-size: 1.8rem;
+  }
+  .section.sobre p {
+    font-size: 1rem;
+  }
+}
+
 /* SEGURANÇA */
 .seguranca {
   background: #001f4d; /* Azul escuro elegante, mantendo harmonia com o logo */
