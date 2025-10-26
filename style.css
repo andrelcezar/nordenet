@@ -58,8 +58,8 @@ h1, h2, h3 {
 
 p {
   margin-bottom: 16px;
-  /*color: #333;*/
-  color:#ffffff
+  color: #333;
+ 
 }
 
 /* ================================
@@ -304,6 +304,10 @@ p {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
+}
+
+footer, footer p {
+  color: #ffffff; /* Branco */
 }
 
 /* ================================
