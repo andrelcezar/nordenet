@@ -7,7 +7,7 @@
   <meta name="description" content="Internet rápida, estável e segura com a Nordenet. Planos residenciais e empresariais com monitoramento de câmeras de segurança.">
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <link rel="icon" href="./assets/nordenet01.png" type="image/png" />
+  <link rel="icon" href="./assets/nordenet02.png" type="image/png" />
 </head>
 
 <body>
@@ -17,6 +17,11 @@
       <a href="#" class="logo-link">
         <img src="./assets/nordenet01.png" alt="Logo da Nordenet" class="logo" />
       </a>
+
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+        ☰
+      </button>
+
       <nav class="navbar" aria-label="Menu principal">
         <ul class="nav-list">
           <li><a href="#sobre">Sobre</a></li>
@@ -29,16 +34,17 @@
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Conectando você ao futuro!</h1>
-        <p>Internet de alta velocidade, estabilidade e agora também segurança para sua casa ou empresa.</p>
-        <a href="#planos" class="btn btn-primary">Conheça nossos planos</a>
-      </div>
+ <!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>Conectando você ao futuro!</h1>
+      <p>Internet de alta velocidade, estabilidade e agora também segurança para sua casa ou empresa.</p>
+      <a href="#planos" class="btn btn-primary">Conheça nossos planos</a>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- SOBRE -->
   <section id="sobre" class="section sobre">
@@ -60,60 +66,55 @@
           <h3>Plano Básico</h3>
           <p class="speed">100 Mbps</p>
           <p class="price">R$ 79,90/mês</p>
-          <a href="https://wa.me/558193252979?text=Olá!%20Tenho%20interesse%20no%20Plano%20Básico%20de%20100%20Mbps%20da%20Nordenet." 
-             target="_blank" 
-             class="btn btn-secondary">
-            Assine Agora
-          </a>
+          <a href="https://wa.me/558193252979?text=Olá!%20Tenho%20interesse%20no%20Plano%20Básico%20de%20100%20Mbps%20da%20Nordenet." target="_blank" class="btn btn-secondary">Assine Agora</a>
         </article>
 
         <article class="card destaque">
           <h3>Plano Intermediário</h3>
           <p class="speed">300 Mbps</p>
           <p class="price">R$ 99,90/mês</p>
-          <a href="https://wa.me/558193252979?text=Olá!%20Tenho%20interesse%20no%20Plano%20Intermediário%20de%20300%20Mbps%20da%20Nordenet." 
-             target="_blank" 
-             class="btn btn-secondary">
-            Assine Agora
-          </a>
+          <a href="https://wa.me/558193252979?text=Olá!%20Tenho%20interesse%20no%20Plano%20Intermediário%20de%20300%20Mbps%20da%20Nordenet." target="_blank" class="btn btn-secondary">Assine Agora</a>
         </article>
 
         <article class="card">
           <h3>Plano Premium</h3>
           <p class="speed">600 Mbps</p>
           <p class="price">R$ 129,90/mês</p>
-          <a href="https://wa.me/558193252979?text=Olá!%20Tenho%20interesse%20no%20Plano%20Premium%20de%20600%20Mbps%20da%20Nordenet." 
-             target="_blank" 
-             class="btn btn-secondary">
-            Assine Agora
-          </a>
+          <a href="https://wa.me/558193252979?text=Olá!%20Tenho%20interesse%20no%20Plano%20Premium%20de%20600%20Mbps%20da%20Nordenet." target="_blank" class="btn btn-secondary">Assine Agora</a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- SEGURANÇA -->
-  <section id="seguranca" class="section seguranca">
-    <div class="container seguranca-content">
-      <div class="seguranca-text">
-        <h2>Nordenet agora também é segurança!</h2>
-        <p>
-          Além de internet de qualidade, oferecemos <strong>instalação e monitoramento de câmeras de segurança</strong> 
-          para sua casa ou empresa.
-        </p>
-        <ul class="checklist">
-          <li>✅ Acesso remoto via celular</li>
-          <li>✅ Gravação 24h</li>
-          <li>✅ Equipamentos modernos</li>
-          <li>✅ Suporte técnico especializado</li>
-        </ul>
-        <p class="cta"><strong>Proteja o que realmente importa!</strong></p>
-      </div>
-      <div class="seguranca-img">
-        <img src="./assets/camera2.jpg" alt="Serviço de segurança Nordenet" />
-      </div>
+ <!-- SEGURANÇA -->
+<section id="seguranca" class="section seguranca">
+  <div class="container seguranca-content">
+    <div class="seguranca-text">
+      <h2>Nordenet agora também é <span>Segurança!</span></h2>
+      <p>
+        Muito além de internet de qualidade, a <strong>Nordenet</strong> oferece 
+        <strong>instalação e monitoramento inteligente de câmeras de segurança</strong> 
+        para residências e empresas.
+      </p>
+      <ul class="checklist">
+        <li>✅ Acesso remoto e visualização em tempo real</li>
+        <li>✅ Gravação contínua 24 horas por dia</li>
+        <li>✅ Equipamentos modernos e de alta resolução</li>
+        <li>✅ Suporte técnico rápido e especializado</li>
+      </ul>
+      <p class="cta">
+        <strong>Proteja o que mais importa com a Nordenet!</strong>
+      </p>
+      <a href="https://wa.me/558193252979" target="_blank" class="btn-seguranca">
+        Fale com um especialista
+      </a>
     </div>
-  </section>
+
+    <div class="seguranca-img">
+      <img src="./assets/camera2.jpg" alt="Serviço de segurança Nordenet" loading="lazy" />
+    </div>
+  </div>
+</section>
 
   <!-- CONTATO -->
   <section id="contato" class="section contato">
